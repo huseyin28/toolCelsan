@@ -1,0 +1,22 @@
+{
+  "name": "toolcelsan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huseyin28/toolCelsan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huseyin28/toolCelsan/issues"
+  },
+  "homepage": "https://github.com/huseyin28/toolCelsan#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
