@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "ejs": "npm install ejs",
     "exp" : "npm i express",
-    "demo" : "npm i "
+    "demo" : "npm i " 
   },
   "repository": {
     "type": "git",
