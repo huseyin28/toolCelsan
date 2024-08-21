@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "ins" : "npm i "
+    "ins" : "npm i express"
   },
   "repository": {
     "type": "git",
