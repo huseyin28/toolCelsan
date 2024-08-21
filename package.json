@@ -6,7 +6,7 @@
   "scripts": {
     "ejs": "npm install ejs",
     "exp" : "npm i express",
-    "minstall" : "npm install "
+    "minstall" : "npm install"
   },
   "repository": {
     "type": "git",
