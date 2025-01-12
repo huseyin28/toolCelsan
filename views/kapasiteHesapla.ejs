@@ -1,0 +1,52 @@
+<h1><%- title %></h1>
+
+<div class="card">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="dia">Halat Çapı</label>
+            <input type="number" class="form-control" id="dia">
+        </div>
+        <div class="form-group">
+            <label for="makara_cap" style="color: green;">(A) Makara Çapı <i class="fas fa-lightbulb fa-fw" data-toggle="modal" data-target="#modalInfo"></i> </label>
+            <input type="number" class="form-control" id="makara_cap">
+        </div>
+        <div class="form-group">
+            <label for="derinlik" style="color: red;">(B) Yanak Derinliği<i class="fas fa-lightbulb fa-fw" data-toggle="modal" data-target="#modalInfo"></i></label>
+            <input type="number" class="form-control" id="derinlik">
+        </div>
+        <div class="form-group">
+            <label for="aralik" style="color: blue;">(C) Yanak Aralığı<i class="fas fa-lightbulb fa-fw" data-toggle="modal" data-target="#modalInfo"></i></label>
+            <input type="number" class="form-control" id="aralik">
+        </div>
+        <button class="btn btn-primary" onclick="Start()">Hesapla</button>
+    </div>
+</div>
+
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content p-4">
+            <img src="https://dipendo.hyy.com.tr/public/images/makara.png" style="width: 100%;" alt="" srcset="">
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">İşte Sonuçlar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="p-3 mb-2 bg-success text-white">Tavsiye edilen : <b id="t"></b></div>
+                <div class="p-3 mb-2 bg-warning text-dark">Makara limiti : <b id="l"></b></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
