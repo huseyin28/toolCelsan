@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "ejs": "npm install ejs",
-    "exp": "npm i express"
+    "exp": "npm i express",
+    "layoput": "npm i express-ejs-layouts",
+    "all": "npm install"
   },
   "repository": {
     "type": "git",
