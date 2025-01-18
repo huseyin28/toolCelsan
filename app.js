@@ -26,6 +26,24 @@ app.get('/makaraBul', (req, res) => {
     });
 })
 
+app.get('/elevatorLabel', (req, res) => {
+    res.render('elevatorLabel', {
+        title: "Asansör Etiketi",
+        scripts: [
+            `<script src="/scripts/elevatorLabel.js"></script>`
+        ]
+    });
+})
+
+app.post('/elevatorLabel', (req, res) => {
+    console.log(req.params);
+
+    res.render('print/elevatorLabelPrint', {
+        layout: false,
+        data: '<h1>ESRA</div>'
+    });
+})
+
 app.get('*', (req, res) => {
     res.status(404).render("404", { layout: false })
 })

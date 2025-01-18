@@ -1,0 +1,76 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Etiket Ekle</h5>
+        <p class="card-text">Lütfen etiket bilgilerini doldurunuz</p>
+
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4">
+                <label for="customer" class="col-form-label">MÜŞTERİ</label>
+            </div>
+            <div class="col-8">
+                <input type="text" id="customer" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4">
+                <label for="orderno" class="col-form-label">SİP NO</label>
+            </div>
+            <div class="col-8">
+                <input type="text" id="orderno" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4">
+                <label for="product" class="col-form-label">ÜRÜN</label>
+            </div>
+            <div class="col-8">
+                <input type="text" id="product" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4">
+                <label for="extent" class="col-form-label">METRAJ</label>
+            </div>
+            <div class="col-8">
+                <input type="text" id="extent" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4">
+                <label for="count" class="col-form-label">ADET</label>
+            </div>
+            <div class="col-8">
+                <input type="text" id="count" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 align-items-center px-3 py-1">
+            <div class="col-4"></div>
+            <div class="col-8">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" onclick="addNewLabel()" type="button">EKLE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h5 class="card-title">Etikeler</h5>
+        <p class="card-text">Etiket listeniz aşağıdadır</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Müşeri</th>
+                    <th scope="col">Sip No</th>
+                    <th scope="col">Ürün</th>
+                    <th scope="col">Metraj</th>
+                    <th scope="col">Miktar</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="labelsList"></tbody>
+        </table>
+        <button class="btn btn-primary" id="btnPrint" onclick="Print()" type="button"><i class="fas fa-print fa-fw"></i> YAZDIR</button>
+    </div>
+</div>
