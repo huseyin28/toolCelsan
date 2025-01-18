@@ -1,7 +1,13 @@
 const labels = [];
 refreshList();
 
-setTimeout(defaultLabels, 1000)
+$(document).ready(function () {
+    $('#wrapper').addClass('no-print')
+    $('#page-top').append('<div class="w210" id="etiketler"></div>')
+
+    defaultLabels();
+})
+
 function defaultLabels() {
     let customer = "S. Minimak"
     let orderno = "REF : BALKANLAR"
@@ -52,13 +58,14 @@ function removeLabel(id) {
 }
 
 function Print() {
-    let html = ''
+    $('#etiketler').html("");
     labels.forEach(label => {
-        html += label.toHTML()
+        $('#etiketler').append(label.toHTML())
     })
-
-    $.redirect('/elevatorLabel', { 'arg1': 'value1', 'arg2': 'value2' });
+    window.print();
+    $('#etiketler').html("");
 }
+
 
 function getPrint() {
     return `<div class="d-grid gap-2"><button class="btn btn-primary" onclick="Print()" type="button">YAZDIR</button></div>`
