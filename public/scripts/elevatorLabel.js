@@ -4,8 +4,6 @@ refreshList();
 $(document).ready(function () {
     $('#wrapper').addClass('no-print')
     $('#page-top').append('<div class="w210" id="etiketler"></div>')
-
-    defaultLabels();
 })
 
 function defaultLabels() {
