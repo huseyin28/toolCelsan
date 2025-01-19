@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "ejs": "npm install ejs",
     "exp": "npm i express",
     "layoput": "npm i express-ejs-layouts",

@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
 
-    <title><%- title %> | toolÇelsan</title>
+    <title><%- title || '' %> | toolÇelsan</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,29 +38,39 @@
             </a>
 
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                GENEL
+            </div>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="/">
-                    <i class="fas fa-fw fa-arrow-right"></i>
+                    <i class="fas fa-fw fa-tape" style="transform: rotate(180deg)"></i>
                     <span>Kapasite Hesapla</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="/makaraBul">
-                    <i class="fas fa-fw fa-arrow-right"></i>
+                    <i class="fas fa-fw fa-question"></i>
                     <span>Makara Bul</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/kalanBul">
+                    <i class="fas fa-fw fa-qrcode"></i>
+                    <span>Kalan Bul</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                ÇIKTI
+            </div>
+            <li class="nav-item">
                 <a class="nav-link" href="/elevatorLabel">
-                    <i class="fas fa-fw fa-arrow-right"></i>
+                    <i class="fas fa-fw fa-tag"></i>
                     <span>Asansör Etiketi</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>

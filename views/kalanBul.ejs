@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-12 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="input-group">
+                    <input id="pid" type="text" class="form-control" placeholder="Ürün kimliği">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="Getir()">Getir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-2 ">
+        <div class="card">
+            <div class="card-body">
+                <small id="productName"></small>
+                <table class="table table-bordered">
+                    <tr class="text-danger">
+                        <td><b>Stok Miktarı : </b></td>
+                        <td><b id="stockCount"></b></td>
+                    </tr>
+                    <tr>
+                        <td>Ürün Kimliği : </td>
+                        <td class="text-primary font-weight-bolder" id="txtPid"></td>
+                    </tr>
+                    <tr>
+                        <td>Satın Alınan : </td>
+                        <td id="purchaseCount"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-2">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Kesilecek <span class="badge badge-danger float-right" id="kesileceklerToplam"></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body text-nowrap overflow-hidden" style="overflow: hidden !important; text-overflow: ellipsis;" id="kesilecekler"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Bekleyen <span class="badge badge-warning float-right" id="bekleyenlerToplam"></span>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body text-nowrap overflow-hidden" style="overflow: hidden !important; text-overflow: ellipsis;" id="bekleyenler"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Gönderilen <span class="badge badge-success float-right" id="gonderilenlerToplam"></span>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body text-nowrap overflow-hidden" style="overflow: hidden !important; text-overflow: ellipsis;" id="gonderilenler"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

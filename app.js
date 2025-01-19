@@ -26,14 +26,6 @@ app.get('/makaraBul', (req, res) => {
     });
 })
 
-app.get('/elevatorLabel', (req, res) => {
-    res.render('elevatorLabel', {
-        title: "Asansör Etiketi",
-        scripts: [
-            `<script src="/scripts/elevatorLabel.js"></script>`
-        ]
-    });
-})
 
 app.post('/elevatorLabel', (req, res) => {
     console.log(req.params);
@@ -41,6 +33,24 @@ app.post('/elevatorLabel', (req, res) => {
     res.render('print/elevatorLabelPrint', {
         layout: false,
         data: '<h1>ESRA</div>'
+    });
+})
+
+
+app.get('/kalanBul', (req, res) => {
+    res.render('kalanBul', {
+        title: 'Kalan Bul',
+        scripts: `<script src="/scripts/kalanBul.js?v=${Math.random()}"></script>`
+
+    });
+})
+
+app.get('/elevatorLabel', (req, res) => {
+    res.render('elevatorLabel', {
+        title: "Asansör Etiketi",
+        scripts: [
+            `<script src="/scripts/elevatorLabel.js"></script>`
+        ]
     });
 })
 
